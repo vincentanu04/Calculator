@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calculator {
+    border: 1px solid rgb(199, 199, 178);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.display {
+    background-color: antiquewhite;
+    padding: 30px 20px;
+    min-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.operators,
+.row1,
+.row2,
+.row3,
+.row4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 40px;
+}
+
+.flex_operands {
+    display: flex;
+}
+
+.operands {
+    width: 75%;
+}
+
+.equals {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 170%;
+}
